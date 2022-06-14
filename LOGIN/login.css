@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --hover-text: rgba(0, 0, 0,0.5);
+    --boder-focus:  #1f4002;
+    --primary-color:rgba(4, 36, 5, 0.8);
+}
+body{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: var(--primary-color) ;
+   
+	font-family: "lato",sans-serif;
+}
+.signup{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+position: inherit;
+
+}
+.form{
+background-color: white;
+width: 400px;
+
+border-radius: 8px;
+padding: 20px 40px;
+box-shadow: 0 10 25 rgba(92, 99, 105, 2.0);
+}
+.titel{
+	font-size: 50px;
+	margin-bottom: 50px;
+    text-align: center;
+}
+.inputContainer{
+position: relative;
+height: 45px;
+width: 90%;
+margin-bottom: 17px;
+
+}
+.input{
+  background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	height: 100%;
+	width: 100%;
+	border: 1px solid #006400;
+	border-radius: 7px;
+	font-size: 16px;
+	padding: 0 20px;
+	outline: none;
+	background: none;
+	z-index: 1;
+    color:rgb(14 32 47);
+
+}
+::placeholder {
+	color:var(--hover-text);
+    margin-left: 5px;
+}
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 1 4px;
+  background-color: white;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+.submit {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: #18980b;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+ 
+}
+
+.submit:hover {
+  background-color:  #1f4002;
+  transform: translateY(-2px);
+}
+.input:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--boder-focus);
+}
+.input:focus {
+  border: 2px solid var(--boder-focus);
+}
+.input:not(:placeholder-shown)+ .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
+.opa{
+   opacity: 70%;
+   background-image: u;
+   background-image: url();
+   animation-name: rainbow;
+ }
+ .help{
+    text-decoration: none;
+    color:#000;
+ }
+ .help:hover{
+    color:var(--hover-text)
+ }
